@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>AhmadDev47</title>
+    <meta name="theme-color" content="#000001">
+    <link rel="stylesheet" href="public/users/css/cat.css">
+    <link rel="icon" href="./hi/cursor.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./hi/cursor.png" type="image/x-icon">
+      <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+      <!-- Firebase SDKs -->
+</head>
+
+
+<body>
+
+
+
+    <div id="overlay">
+        <button class="overlaybtn" onclick="removeOverlay()">ᴄʟɪᴄᴋ ᴛᴏ ᴇɴᴛᴇʀ...</button>
+    </div>
+    <div id="user-page">
+
+        <video class="background" autoplay muted loop playsinline>
+            <source src="./hi/ezgif-1fd4a9bcf9b1c0.mp4" type="video/mp4">
+        </video>
+
+        <div class="main-container" id="mainDiv">
+
+            <div class="profile-container">
+                <div class="avatar-frame">
+                    <img class="pp" id="user-avatar" src="" alt="Avatar">
+                  </div>                  
+                <p class="username breathing" data-tooltip="uid: 2">REXAR - WALID</p>
+
+                <div class="badges-container">
+                    <div class="badges pic-badge" id="own" data-tooltip="Rich" bis_skin_checked="1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="i3ym1x_db5be9b7c0fc4c7f3529" width="1em" height="1em" viewBox="2.01 2.01 19.98 19.98">
+                            <path d="M2.047 14.668a.994.994 0 0 0 .465.607l1.91 1.104v2.199a1 1 0 0 0 1 1h2.199l1.104 1.91a1.01 1.01 0 0 0 .866.5c.174 0 .347-.046.501-.135L12 20.75l1.91 1.104a1.001 1.001 0 0 0 1.366-.365l1.103-1.91h2.199a1 1 0 0 0 1-1V16.38l1.91-1.104a1 1 0 0 0 .365-1.367L20.75 12l1.104-1.908a1 1 0 0 0-.365-1.366l-1.91-1.104v-2.2a1 1 0 0 0-1-1H16.38l-1.103-1.909a1.008 1.008 0 0 0-.607-.466a.993.993 0 0 0-.759.1L12 3.25l-1.909-1.104a1 1 0 0 0-1.366.365l-1.104 1.91H5.422a1 1 0 0 0-1 1V7.62l-1.91 1.104a1.003 1.003 0 0 0-.365 1.368L3.251 12l-1.104 1.908a1.009 1.009 0 0 0-.1.76zM12 13c-3.48 0-4-1.879-4-3c0-1.287 1.029-2.583 3-2.915V6.012h2v1.109c1.734.41 2.4 1.853 2.4 2.879h-1l-1 .018C13.386 9.638 13.185 9 12 9c-1.299 0-2 .515-2 1c0 .374 0 1 2 1c3.48 0 4 1.879 4 3c0 1.287-1.029 2.583-3 2.915V18h-2v-1.08c-2.339-.367-3-2.003-3-2.92h2c.011.143.159 1 2 1c1.38 0 2-.585 2-1c0-.325 0-1-2-1z" fill="white"></path>
+                        </svg>
+                    </div>
+                
+                    <div class="badges pic-badge" id="own" data-tooltip="I AM NOT CHRISTIAN" bis_skin_checked="1">
+                        <img src="https://r2.guns.lol/5987a998-1384-48a0-87b4-dc0865395c58.png" alt="Badge Icon" width="16" height="17">
+                    </div>
+                
+                    <div class="badges pic-badge" data-tooltip="looks cool" bis_skin_checked="1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z" fill="white"></path>
+                        </svg>
+                    </div>
+                
+                    <div class="badges pic-badge" data-tooltip="Co-Owner" bis_skin_checked="1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="23 32 465 448">
+                            <path fill="currentColor" d="M396.31 32H264l84.19 112.26L396.31 32zm-280.62 0l48.12 112.26L248 32H115.69zM256 74.67L192 160h128l-64-85.33zm166.95-23.61L376.26 160H488L422.95 51.06zm-333.9 0L23 160h112.74L89.05 51.06zM146.68 192H24l222.8 288h.53L146.68 192zm218.64 0L264.67 480h.53L488 192H365.32zm-35.93 0H182.61L256 400l73.39-208z" fill="white"></path>
+                        </svg>
+                    </div>
+                
+                    <div class="badges pic-badge" data-tooltip="Booster" bis_skin_checked="1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="4.99 3 14 18">
+                            <path fill="currentColor" d="M17.66 11.2c-.23-.3-.51-.56-.77-.82c-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32c-2.59 2.08-3.61 5.75-2.39 8.9c.04.1.08.2.08.33c0 .22-.15.42-.35.5c-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5c.14.6.41 1.2.71 1.73c1.08 1.73 2.95 2.97 4.96 3.22c2.14.27 4.43-.12 6.07-1.6c1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26" fill="white"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+
+                <div class="bio-container">
+                    <div class="bio typewriter"></div>
+                </div>
+                <div class="pre-container">
+                    <div class="pre">
+                        <div class="cropped">
+                            
+                            <img draggable="false" id="rpc">
+                        </div>
+                    </div>
+                </div>                                    
+
+                <div class="links-container" id="linksDiv">
+                    <div class="logo instagram" id="ig" onclick="window.open('https://www.instagram.com/walidoffiziel', '_blank');" bis_skin_checked="1">
+                        <svg fill="#d62976" viewBox="0 0 32 32" class="links" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z"></path>
+                                    <path d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8 c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z"></path>
+                                    <path d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8 c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logo btc" id="btc" onclick="window.open('https://discord.gg/Y94ApAnj4Q', '_blank');"
+                        bis_skin_checked="1">
+                        <svg viewBox="0 0 24 24" title="https://discord.com/invite/ugcs" id="btcInput" class="links"
+                            fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.59 5.88997C17.36 5.31997 16.05 4.89997 14.67 4.65997C14.5 4.95997 14.3 5.36997 14.17 5.69997C12.71 5.47997 11.26 5.47997 9.83001 5.69997C9.69001 5.36997 9.49001 4.95997 9.32001 4.65997C7.94001 4.89997 6.63001 5.31997 5.40001 5.88997C2.92001 9.62997 2.25001 13.28 2.58001 16.87C4.23001 18.1 5.82001 18.84 7.39001 19.33C7.78001 18.8 8.12001 18.23 8.42001 17.64C7.85001 17.43 7.31001 17.16 6.80001 16.85C6.94001 16.75 7.07001 16.64 7.20001 16.54C10.33 18 13.72 18 16.81 16.54C16.94 16.65 17.07 16.75 17.21 16.85C16.7 17.16 16.15 17.42 15.59 17.64C15.89 18.23 16.23 18.8 16.62 19.33C18.19 18.84 19.79 18.1 21.43 16.87C21.82 12.7 20.76 9.08997 18.61 5.88997H18.59ZM8.84001 14.67C7.90001 14.67 7.13001 13.8 7.13001 12.73C7.13001 11.66 7.88001 10.79 8.84001 10.79C9.80001 10.79 10.56 11.66 10.55 12.73C10.55 13.79 9.80001 14.67 8.84001 14.67ZM15.15 14.67C14.21 14.67 13.44 13.8 13.44 12.73C13.44 11.66 14.19 10.79 15.15 10.79C16.11 10.79 16.87 11.66 16.86 12.73C16.86 13.79 16.11 14.67 15.15 14.67Z"
+                                fill="#ffffff"></path>
+                        </svg>
+                    </div>
+                    <div class="logo tiktok" id="tt" onclick="window.open('https://www.tiktok.com/@rexar_48', '_blank');"
+                        bis_skin_checked="1">
+                        <svg fill="#ffffff" class="links" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            xml:space="preserve">
+                            <path
+                                d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z">
+                            </path>
+                        </svg>
+                    </div>
+
+
+
+                    <div class="logo telegram" id="tele" onclick="window.open('https://discord.gg/Y94ApAnj4Q', '_blank');" bis_skin_checked="1">
+                        <svg fill="#2aaaee" version="1.1" id="tele" class="links" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: none;
+                                    }
+                                </style>
+                                <path d="M19.2,4.4L2.9,10.7c-1.1,0.4-1.1,1.1-0.2,1.3l4.1,1.3l1.6,4.8c0.2,0.5,0.1,0.7,0.6,0.7c0.4,0,0.6-0.2,0.8-0.4 c0.1-0.1,1-1,2-2l4.2,3.1c0.8,0.4,1.3,0.2,1.5-0.7l2.8-13.1C20.6,4.6,19.9,4,19.2,4.4z M17.1,7.4l-7.8,7.1L9,17.8L7.4,13l9.2-5.8 C17,6.9,17.4,7.1,17.1,7.4z"></path>
+                                <rect y="0" class="st0" width="24" height="24"></rect>
+                            </g>
+                        </svg>
+                    </div>
+
+                </div>
+                
+                <div class="linksline"></div>
+                <p id="track" style="color:#1DB954; font-weight:bold; font-family:monospace; margin-top:10px;">
+                    🎵 Loading Spotify...
+                </p>   
+            </div>
+            <p id="activity" style="color: #ccc; font-size: 14px; text-align: center; margin-top: 10px;">
+                Checking game status...
+            </p>
+     <!-- 👁 View Counter -->
+     <div id="view-count">👁 <span id="views">...</span></div>
+        </div>
+        
+        <audio id="backgroundsong" src="./hi/SpotiDownloader.com - So🤞 - Bonez MC.mp3" loop autoplay></audio>
+
+        <div class="volume-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+                <defs>
+                    <mask id="ipTVolumeNotice0">
+                        <g fill="none" stroke="#fff" stroke-width="4">
+                            <path fill="#555" stroke-linejoin="round" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M32 15a11.91 11.91 0 0 1 1.684 1.859A12.07 12.07 0 0 1 36 24c0 2.654-.846 5.107-2.278 7.09A11.936 11.936 0 0 1 32 33"></path>
+                            <path stroke-linecap="round" d="M34.236 41.186C40.084 37.696 44 31.305 44 24c0-7.192-3.796-13.496-9.493-17.02"></path>
+                        </g>
+                    </mask>
+                </defs>
+                <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTVolumeNotice0)"></path>
+            </svg>
+        
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>              
+          <!-- Scripts (moved to bottom for proper load order) -->
+           <script src="effects.js"></script>
+           <script src="effects2.js"></script>
+           <script src="tilt.js"></script>
+           <script src="volume.js"></script>
+</body>
+
+</html>
